@@ -6,9 +6,9 @@
       "core": {"value": 13.8, "as_of": "2026-06-10", "source_name": "Central Bank of Egypt", "source_url": "https://www.cbe.org.eg"}
     },
     "rates": {
-      "policy": {"value": 19.50, "as_of": "2026-05-21", "source_name": "Central Bank of Egypt", "source_url": "https://www.cbe.org.eg"},
-      "overnight_deposit": {"value": 19.00, "as_of": "2026-05-21", "source_name": "Central Bank of Egypt", "source_url": "https://www.cbe.org.eg"},
-      "overnight_lending": {"value": 20.00, "as_of": "2026-05-21", "source_name": "Central Bank of Egypt", "source_url": "https://www.cbe.org.eg"}
+      "policy": {"value": 19.50, "as_of": "2026-05-14", "source_name": "Central Bank of Egypt", "source_url": "https://www.cbe.org.eg"},
+      "overnight_deposit": {"value": 19.00, "as_of": "2026-05-14", "source_name": "Central Bank of Egypt", "source_url": "https://www.cbe.org.eg"},
+      "overnight_lending": {"value": 20.00, "as_of": "2026-05-14", "source_name": "Central Bank of Egypt", "source_url": "https://www.cbe.org.eg"}
     }
   }
 }

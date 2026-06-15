@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": 1,
     "last_updated": "2026-06-15",
-    "last_checked": "2026-06-15T10:39:23+00:00",
+    "last_checked": "2026-06-15T10:47:00+00:00",
     "generated_by": "collect.py",
     "disclaimer": "Internal reference only. Verify against source before publishing."
   },
@@ -17,7 +17,7 @@
         "source_url": "https://github.com/fawazahmed0/exchange-api",
         "status": "fresh",
         "kind": "market",
-        "previous_value": 51.65
+        "previous_value": 52.2774
       }
     },
     "EUR_EGP": {
@@ -30,7 +30,7 @@
         "source_url": "https://github.com/fawazahmed0/exchange-api",
         "status": "fresh",
         "kind": "market",
-        "previous_value": 60.06
+        "previous_value": 60.9538
       }
     }
   },
@@ -42,7 +42,7 @@
       "source_name": "CAPMAS",
       "source_url": "https://www.capmas.gov.eg",
       "status": "fresh",
-      "previous_value": 13.1
+      "previous_value": 14.6
     },
     "core": {
       "value": 13.8,
@@ -51,36 +51,36 @@
       "source_name": "Central Bank of Egypt",
       "source_url": "https://www.cbe.org.eg",
       "status": "fresh",
-      "previous_value": 11.5
+      "previous_value": 13.8
     }
   },
   "rates": {
     "policy": {
       "value": 19.5,
       "unit": "%",
-      "as_of": "2026-05-21",
+      "as_of": "2026-05-14",
       "source_name": "Central Bank of Egypt",
       "source_url": "https://www.cbe.org.eg",
       "status": "fresh",
-      "previous_value": 24.0
+      "previous_value": 19.5
     },
     "overnight_deposit": {
       "value": 19.0,
       "unit": "%",
-      "as_of": "2026-05-21",
+      "as_of": "2026-05-14",
       "source_name": "Central Bank of Egypt",
       "source_url": "https://www.cbe.org.eg",
       "status": "fresh",
-      "previous_value": 23.5
+      "previous_value": 19.0
     },
     "overnight_lending": {
       "value": 20.0,
       "unit": "%",
-      "as_of": "2026-05-21",
+      "as_of": "2026-05-14",
       "source_name": "Central Bank of Egypt",
       "source_url": "https://www.cbe.org.eg",
       "status": "fresh",
-      "previous_value": 24.5
+      "previous_value": 20.0
     }
   }
 }

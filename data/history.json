@@ -13,7 +13,7 @@
           "source_url": "https://github.com/fawazahmed0/exchange-api",
           "status": "fresh",
           "kind": "market",
-          "previous_value": 51.65
+          "previous_value": 52.2774
         }
       },
       "EUR_EGP": {
@@ -26,7 +26,7 @@
           "source_url": "https://github.com/fawazahmed0/exchange-api",
           "status": "fresh",
           "kind": "market",
-          "previous_value": 60.06
+          "previous_value": 60.9538
         }
       }
     },
@@ -38,7 +38,7 @@
         "source_name": "CAPMAS",
         "source_url": "https://www.capmas.gov.eg",
         "status": "fresh",
-        "previous_value": 13.1
+        "previous_value": 14.6
       },
       "core": {
         "value": 13.8,
@@ -47,36 +47,36 @@
         "source_name": "Central Bank of Egypt",
         "source_url": "https://www.cbe.org.eg",
         "status": "fresh",
-        "previous_value": 11.5
+        "previous_value": 13.8
       }
     },
     "rates": {
       "policy": {
         "value": 19.5,
         "unit": "%",
-        "as_of": "2026-05-21",
+        "as_of": "2026-05-14",
         "source_name": "Central Bank of Egypt",
         "source_url": "https://www.cbe.org.eg",
         "status": "fresh",
-        "previous_value": 24.0
+        "previous_value": 19.5
       },
       "overnight_deposit": {
         "value": 19.0,
         "unit": "%",
-        "as_of": "2026-05-21",
+        "as_of": "2026-05-14",
         "source_name": "Central Bank of Egypt",
         "source_url": "https://www.cbe.org.eg",
         "status": "fresh",
-        "previous_value": 23.5
+        "previous_value": 19.0
       },
       "overnight_lending": {
         "value": 20.0,
         "unit": "%",
-        "as_of": "2026-05-21",
+        "as_of": "2026-05-14",
         "source_name": "Central Bank of Egypt",
         "source_url": "https://www.cbe.org.eg",
         "status": "fresh",
-        "previous_value": 24.5
+        "previous_value": 20.0
       }
     }
   },
@@ -95,7 +95,7 @@
           "kind": "official"
         },
         "market": {
-          "value": 51.65,
+          "value": 52.2774,
           "unit": "EGP per USD",
           "as_of": "2026-05-31",
           "source_name": "Exchange API (open data)",
@@ -115,7 +115,7 @@
           "kind": "official"
         },
         "market": {
-          "value": 60.06,
+          "value": 60.9538,
           "unit": "EGP per EUR",
           "as_of": "2026-05-31",
           "source_name": "Exchange API (open data)",
@@ -127,7 +127,7 @@
     },
     "inflation": {
       "headline": {
-        "value": 13.1,
+        "value": 14.6,
         "unit": "% YoY",
         "as_of": "2026-06-10",
         "source_name": "CAPMAS",
@@ -135,7 +135,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 11.5,
+        "value": 13.8,
         "unit": "% YoY",
         "as_of": "2026-06-10",
         "source_name": "Central Bank of Egypt",
@@ -145,7 +145,7 @@
     },
     "rates": {
       "policy": {
-        "value": 24.0,
+        "value": 19.5,
         "unit": "%",
         "as_of": "2026-05-31",
         "source_name": "Central Bank of Egypt",
@@ -153,7 +153,7 @@
         "status": "fresh"
       },
       "overnight_deposit": {
-        "value": 23.5,
+        "value": 19.0,
         "unit": "%",
         "as_of": "2026-05-31",
         "source_name": "Central Bank of Egypt",
@@ -161,7 +161,7 @@
         "status": "fresh"
       },
       "overnight_lending": {
-        "value": 24.5,
+        "value": 20.0,
         "unit": "%",
         "as_of": "2026-05-31",
         "source_name": "Central Bank of Egypt",
@@ -177,7 +177,7 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 51.63,
+          "value": 53.0159,
           "unit": "EGP per USD",
           "as_of": "2026-04-30",
           "source_name": "Exchange API (open data)",
@@ -189,7 +189,7 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 59.85,
+          "value": 61.8621,
           "unit": "EGP per EUR",
           "as_of": "2026-04-30",
           "source_name": "Exchange API (open data)",
@@ -201,7 +201,7 @@
     },
     "inflation": {
       "headline": {
-        "value": 13.7,
+        "value": 14.9,
         "unit": "% YoY",
         "as_of": "2026-05-10",
         "source_name": "CAPMAS",
@@ -209,7 +209,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 12.1,
+        "value": 13.8,
         "unit": "% YoY",
         "as_of": "2026-05-10",
         "source_name": "Central Bank of Egypt",
@@ -219,7 +219,7 @@
     },
     "rates": {
       "policy": {
-        "value": 24.0,
+        "value": 19.5,
         "unit": "%",
         "as_of": "2026-04-30",
         "source_name": "Central Bank of Egypt",
@@ -227,7 +227,7 @@
         "status": "fresh"
       },
       "overnight_deposit": {
-        "value": 23.5,
+        "value": 19.0,
         "unit": "%",
         "as_of": "2026-04-30",
         "source_name": "Central Bank of Egypt",
@@ -235,7 +235,7 @@
         "status": "fresh"
       },
       "overnight_lending": {
-        "value": 24.5,
+        "value": 20.0,
         "unit": "%",
         "as_of": "2026-04-30",
         "source_name": "Central Bank of Egypt",
@@ -251,7 +251,7 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 51.36,
+          "value": 54.4478,
           "unit": "EGP per USD",
           "as_of": "2026-03-31",
           "source_name": "Exchange API (open data)",
@@ -263,7 +263,7 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 59.36,
+          "value": 62.4953,
           "unit": "EGP per EUR",
           "as_of": "2026-03-31",
           "source_name": "Exchange API (open data)",
@@ -275,7 +275,7 @@
     },
     "inflation": {
       "headline": {
-        "value": 14.4,
+        "value": 15.2,
         "unit": "% YoY",
         "as_of": "2026-04-10",
         "source_name": "CAPMAS",
@@ -283,7 +283,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 12.8,
+        "value": 14.0,
         "unit": "% YoY",
         "as_of": "2026-04-10",
         "source_name": "Central Bank of Egypt",
@@ -293,7 +293,7 @@
     },
     "rates": {
       "policy": {
-        "value": 24.0,
+        "value": 19.5,
         "unit": "%",
         "as_of": "2026-03-31",
         "source_name": "Central Bank of Egypt",
@@ -301,7 +301,7 @@
         "status": "fresh"
       },
       "overnight_deposit": {
-        "value": 23.5,
+        "value": 19.0,
         "unit": "%",
         "as_of": "2026-03-31",
         "source_name": "Central Bank of Egypt",
@@ -309,7 +309,7 @@
         "status": "fresh"
       },
       "overnight_lending": {
-        "value": 24.5,
+        "value": 20.0,
         "unit": "%",
         "as_of": "2026-03-31",
         "source_name": "Central Bank of Egypt",
@@ -325,7 +325,7 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 51.09,
+          "value": 47.493,
           "unit": "EGP per USD",
           "as_of": "2026-02-28",
           "source_name": "Exchange API (open data)",
@@ -337,7 +337,7 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 58.87,
+          "value": 56.0689,
           "unit": "EGP per EUR",
           "as_of": "2026-02-28",
           "source_name": "Exchange API (open data)",
@@ -349,7 +349,7 @@
     },
     "inflation": {
       "headline": {
-        "value": 15.0,
+        "value": 13.4,
         "unit": "% YoY",
         "as_of": "2026-03-10",
         "source_name": "CAPMAS",
@@ -357,7 +357,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 13.4,
+        "value": 12.7,
         "unit": "% YoY",
         "as_of": "2026-03-10",
         "source_name": "Central Bank of Egypt",
@@ -367,7 +367,7 @@
     },
     "rates": {
       "policy": {
-        "value": 24.0,
+        "value": 19.5,
         "unit": "%",
         "as_of": "2026-02-28",
         "source_name": "Central Bank of Egypt",
@@ -375,7 +375,7 @@
         "status": "fresh"
       },
       "overnight_deposit": {
-        "value": 23.5,
+        "value": 19.0,
         "unit": "%",
         "as_of": "2026-02-28",
         "source_name": "Central Bank of Egypt",
@@ -383,7 +383,7 @@
         "status": "fresh"
       },
       "overnight_lending": {
-        "value": 24.5,
+        "value": 20.0,
         "unit": "%",
         "as_of": "2026-02-28",
         "source_name": "Central Bank of Egypt",
@@ -399,7 +399,7 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 51.07,
+          "value": 47.1217,
           "unit": "EGP per USD",
           "as_of": "2026-01-31",
           "source_name": "Exchange API (open data)",
@@ -411,7 +411,7 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 58.67,
+          "value": 55.8803,
           "unit": "EGP per EUR",
           "as_of": "2026-01-31",
           "source_name": "Exchange API (open data)",
@@ -423,7 +423,7 @@
     },
     "inflation": {
       "headline": {
-        "value": 15.6,
+        "value": 11.9,
         "unit": "% YoY",
         "as_of": "2026-02-10",
         "source_name": "CAPMAS",
@@ -431,7 +431,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 14.0,
+        "value": 11.2,
         "unit": "% YoY",
         "as_of": "2026-02-10",
         "source_name": "Central Bank of Egypt",
@@ -441,7 +441,7 @@
     },
     "rates": {
       "policy": {
-        "value": 24.0,
+        "value": 20.5,
         "unit": "%",
         "as_of": "2026-01-31",
         "source_name": "Central Bank of Egypt",
@@ -449,7 +449,7 @@
         "status": "fresh"
       },
       "overnight_deposit": {
-        "value": 23.5,
+        "value": 20.0,
         "unit": "%",
         "as_of": "2026-01-31",
         "source_name": "Central Bank of Egypt",
@@ -457,7 +457,7 @@
         "status": "fresh"
       },
       "overnight_lending": {
-        "value": 24.5,
+        "value": 21.0,
         "unit": "%",
         "as_of": "2026-01-31",
         "source_name": "Central Bank of Egypt",
@@ -473,7 +473,7 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 50.8,
+          "value": 47.7182,
           "unit": "EGP per USD",
           "as_of": "2025-12-31",
           "source_name": "Exchange API (open data)",
@@ -485,7 +485,7 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 58.19,
+          "value": 56.0267,
           "unit": "EGP per EUR",
           "as_of": "2025-12-31",
           "source_name": "Exchange API (open data)",
@@ -497,7 +497,7 @@
     },
     "inflation": {
       "headline": {
-        "value": 16.2,
+        "value": 12.3,
         "unit": "% YoY",
         "as_of": "2026-01-10",
         "source_name": "CAPMAS",
@@ -505,7 +505,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 14.6,
+        "value": 11.8,
         "unit": "% YoY",
         "as_of": "2026-01-10",
         "source_name": "Central Bank of Egypt",
@@ -515,7 +515,7 @@
     },
     "rates": {
       "policy": {
-        "value": 24.0,
+        "value": 20.5,
         "unit": "%",
         "as_of": "2025-12-31",
         "source_name": "Central Bank of Egypt",
@@ -523,7 +523,7 @@
         "status": "fresh"
       },
       "overnight_deposit": {
-        "value": 23.5,
+        "value": 20.0,
         "unit": "%",
         "as_of": "2025-12-31",
         "source_name": "Central Bank of Egypt",
@@ -531,7 +531,7 @@
         "status": "fresh"
       },
       "overnight_lending": {
-        "value": 24.5,
+        "value": 21.0,
         "unit": "%",
         "as_of": "2025-12-31",
         "source_name": "Central Bank of Egypt",
@@ -547,7 +547,7 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 50.78,
+          "value": 47.6452,
           "unit": "EGP per USD",
           "as_of": "2025-11-30",
           "source_name": "Exchange API (open data)",
@@ -559,7 +559,7 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 57.99,
+          "value": 55.2522,
           "unit": "EGP per EUR",
           "as_of": "2025-11-30",
           "source_name": "Exchange API (open data)",
@@ -571,7 +571,7 @@
     },
     "inflation": {
       "headline": {
-        "value": 16.9,
+        "value": 12.3,
         "unit": "% YoY",
         "as_of": "2025-12-10",
         "source_name": "CAPMAS",
@@ -579,7 +579,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 15.3,
+        "value": 12.5,
         "unit": "% YoY",
         "as_of": "2025-12-10",
         "source_name": "Central Bank of Egypt",
@@ -589,7 +589,7 @@
     },
     "rates": {
       "policy": {
-        "value": 24.0,
+        "value": 21.5,
         "unit": "%",
         "as_of": "2025-11-30",
         "source_name": "Central Bank of Egypt",
@@ -597,7 +597,7 @@
         "status": "fresh"
       },
       "overnight_deposit": {
-        "value": 23.5,
+        "value": 21.0,
         "unit": "%",
         "as_of": "2025-11-30",
         "source_name": "Central Bank of Egypt",
@@ -605,7 +605,7 @@
         "status": "fresh"
       },
       "overnight_lending": {
-        "value": 24.5,
+        "value": 22.0,
         "unit": "%",
         "as_of": "2025-11-30",
         "source_name": "Central Bank of Egypt",
@@ -621,7 +621,7 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 50.51,
+          "value": 47.2343,
           "unit": "EGP per USD",
           "as_of": "2025-10-31",
           "source_name": "Exchange API (open data)",
@@ -633,7 +633,7 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 57.51,
+          "value": 54.6547,
           "unit": "EGP per EUR",
           "as_of": "2025-10-31",
           "source_name": "Exchange API (open data)",
@@ -645,7 +645,7 @@
     },
     "inflation": {
       "headline": {
-        "value": 17.5,
+        "value": 12.5,
         "unit": "% YoY",
         "as_of": "2025-11-10",
         "source_name": "CAPMAS",
@@ -653,7 +653,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 15.9,
+        "value": 12.1,
         "unit": "% YoY",
         "as_of": "2025-11-10",
         "source_name": "Central Bank of Egypt",
@@ -663,7 +663,7 @@
     },
     "rates": {
       "policy": {
-        "value": 24.0,
+        "value": 21.5,
         "unit": "%",
         "as_of": "2025-10-31",
         "source_name": "Central Bank of Egypt",
@@ -671,7 +671,7 @@
         "status": "fresh"
       },
       "overnight_deposit": {
-        "value": 23.5,
+        "value": 21.0,
         "unit": "%",
         "as_of": "2025-10-31",
         "source_name": "Central Bank of Egypt",
@@ -679,7 +679,7 @@
         "status": "fresh"
       },
       "overnight_lending": {
-        "value": 24.5,
+        "value": 22.0,
         "unit": "%",
         "as_of": "2025-10-31",
         "source_name": "Central Bank of Egypt",
@@ -695,7 +695,7 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 50.24,
+          "value": 48.0489,
           "unit": "EGP per USD",
           "as_of": "2025-09-30",
           "source_name": "Exchange API (open data)",
@@ -707,7 +707,7 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 57.03,
+          "value": 56.3188,
           "unit": "EGP per EUR",
           "as_of": "2025-09-30",
           "source_name": "Exchange API (open data)",
@@ -719,7 +719,7 @@
     },
     "inflation": {
       "headline": {
-        "value": 18.1,
+        "value": 11.7,
         "unit": "% YoY",
         "as_of": "2025-10-10",
         "source_name": "CAPMAS",
@@ -727,7 +727,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 16.5,
+        "value": 11.3,
         "unit": "% YoY",
         "as_of": "2025-10-10",
         "source_name": "Central Bank of Egypt",
@@ -737,7 +737,7 @@
     },
     "rates": {
       "policy": {
-        "value": 24.0,
+        "value": 22.5,
         "unit": "%",
         "as_of": "2025-09-30",
         "source_name": "Central Bank of Egypt",
@@ -745,7 +745,7 @@
         "status": "fresh"
       },
       "overnight_deposit": {
-        "value": 23.5,
+        "value": 22.0,
         "unit": "%",
         "as_of": "2025-09-30",
         "source_name": "Central Bank of Egypt",
@@ -753,7 +753,7 @@
         "status": "fresh"
       },
       "overnight_lending": {
-        "value": 24.5,
+        "value": 23.0,
         "unit": "%",
         "as_of": "2025-09-30",
         "source_name": "Central Bank of Egypt",
@@ -769,7 +769,7 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 50.22,
+          "value": 48.5521,
           "unit": "EGP per USD",
           "as_of": "2025-08-31",
           "source_name": "Exchange API (open data)",
@@ -781,7 +781,7 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 56.84,
+          "value": 56.7281,
           "unit": "EGP per EUR",
           "as_of": "2025-08-31",
           "source_name": "Exchange API (open data)",
@@ -793,7 +793,7 @@
     },
     "inflation": {
       "headline": {
-        "value": 18.7,
+        "value": 12.0,
         "unit": "% YoY",
         "as_of": "2025-09-10",
         "source_name": "CAPMAS",
@@ -801,7 +801,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 17.1,
+        "value": 10.7,
         "unit": "% YoY",
         "as_of": "2025-09-10",
         "source_name": "Central Bank of Egypt",
@@ -811,7 +811,7 @@
     },
     "rates": {
       "policy": {
-        "value": 24.5,
+        "value": 22.5,
         "unit": "%",
         "as_of": "2025-08-31",
         "source_name": "Central Bank of Egypt",
@@ -819,7 +819,7 @@
         "status": "fresh"
       },
       "overnight_deposit": {
-        "value": 24.0,
+        "value": 22.0,
         "unit": "%",
         "as_of": "2025-08-31",
         "source_name": "Central Bank of Egypt",
@@ -827,7 +827,7 @@
         "status": "fresh"
       },
       "overnight_lending": {
-        "value": 25.0,
+        "value": 23.0,
         "unit": "%",
         "as_of": "2025-08-31",
         "source_name": "Central Bank of Egypt",
@@ -843,7 +843,7 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 49.95,
+          "value": 48.7246,
           "unit": "EGP per USD",
           "as_of": "2025-07-31",
           "source_name": "Exchange API (open data)",
@@ -855,7 +855,7 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 56.37,
+          "value": 55.6966,
           "unit": "EGP per EUR",
           "as_of": "2025-07-31",
           "source_name": "Exchange API (open data)",
@@ -867,7 +867,7 @@
     },
     "inflation": {
       "headline": {
-        "value": 19.4,
+        "value": 13.9,
         "unit": "% YoY",
         "as_of": "2025-08-10",
         "source_name": "CAPMAS",
@@ -875,7 +875,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 17.8,
+        "value": 11.6,
         "unit": "% YoY",
         "as_of": "2025-08-10",
         "source_name": "Central Bank of Egypt",
@@ -917,7 +917,7 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 49.93,
+          "value": 49.7198,
           "unit": "EGP per USD",
           "as_of": "2025-06-30",
           "source_name": "Exchange API (open data)",
@@ -929,7 +929,7 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 56.18,
+          "value": 58.2749,
           "unit": "EGP per EUR",
           "as_of": "2025-06-30",
           "source_name": "Exchange API (open data)",
@@ -941,7 +941,7 @@
     },
     "inflation": {
       "headline": {
-        "value": 20.0,
+        "value": 14.9,
         "unit": "% YoY",
         "as_of": "2025-07-10",
         "source_name": "CAPMAS",
@@ -949,7 +949,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 18.4,
+        "value": 11.4,
         "unit": "% YoY",
         "as_of": "2025-07-10",
         "source_name": "Central Bank of Egypt",
@@ -991,7 +991,7 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 49.67,
+          "value": 49.5363,
           "unit": "EGP per USD",
           "as_of": "2025-05-31",
           "source_name": "Exchange API (open data)",
@@ -1003,7 +1003,7 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 55.73,
+          "value": 56.2175,
           "unit": "EGP per EUR",
           "as_of": "2025-05-31",
           "source_name": "Exchange API (open data)",
@@ -1015,7 +1015,7 @@
     },
     "inflation": {
       "headline": {
-        "value": 20.6,
+        "value": 16.8,
         "unit": "% YoY",
         "as_of": "2025-06-10",
         "source_name": "CAPMAS",
@@ -1023,7 +1023,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 19.0,
+        "value": 13.1,
         "unit": "% YoY",
         "as_of": "2025-06-10",
         "source_name": "Central Bank of Egypt",
@@ -1033,7 +1033,7 @@
     },
     "rates": {
       "policy": {
-        "value": 25.5,
+        "value": 24.5,
         "unit": "%",
         "as_of": "2025-05-31",
         "source_name": "Central Bank of Egypt",
@@ -1041,7 +1041,7 @@
         "status": "fresh"
       },
       "overnight_deposit": {
-        "value": 25.0,
+        "value": 24.0,
         "unit": "%",
         "as_of": "2025-05-31",
         "source_name": "Central Bank of Egypt",
@@ -1049,7 +1049,7 @@
         "status": "fresh"
       },
       "overnight_lending": {
-        "value": 26.0,
+        "value": 25.0,
         "unit": "%",
         "as_of": "2025-05-31",
         "source_name": "Central Bank of Egypt",
@@ -1065,7 +1065,7 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 49.4,
+          "value": 50.8054,
           "unit": "EGP per USD",
           "as_of": "2025-04-30",
           "source_name": "Exchange API (open data)",
@@ -1077,7 +1077,7 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 55.26,
+          "value": 57.7634,
           "unit": "EGP per EUR",
           "as_of": "2025-04-30",
           "source_name": "Exchange API (open data)",
@@ -1089,7 +1089,7 @@
     },
     "inflation": {
       "headline": {
-        "value": 21.2,
+        "value": 13.9,
         "unit": "% YoY",
         "as_of": "2025-05-10",
         "source_name": "CAPMAS",
@@ -1097,7 +1097,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 19.6,
+        "value": 10.4,
         "unit": "% YoY",
         "as_of": "2025-05-10",
         "source_name": "Central Bank of Egypt",
@@ -1139,7 +1139,7 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 49.38,
+          "value": 50.5214,
           "unit": "EGP per USD",
           "as_of": "2025-03-31",
           "source_name": "Exchange API (open data)",
@@ -1151,7 +1151,7 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 55.08,
+          "value": 54.7743,
           "unit": "EGP per EUR",
           "as_of": "2025-03-31",
           "source_name": "Exchange API (open data)",
@@ -1163,7 +1163,7 @@
     },
     "inflation": {
       "headline": {
-        "value": 21.9,
+        "value": 13.6,
         "unit": "% YoY",
         "as_of": "2025-04-10",
         "source_name": "CAPMAS",
@@ -1171,7 +1171,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 20.3,
+        "value": 9.4,
         "unit": "% YoY",
         "as_of": "2025-04-10",
         "source_name": "Central Bank of Egypt",
@@ -1181,7 +1181,7 @@
     },
     "rates": {
       "policy": {
-        "value": 25.5,
+        "value": 27.75,
         "unit": "%",
         "as_of": "2025-03-31",
         "source_name": "Central Bank of Egypt",
@@ -1189,7 +1189,7 @@
         "status": "fresh"
       },
       "overnight_deposit": {
-        "value": 25.0,
+        "value": 27.25,
         "unit": "%",
         "as_of": "2025-03-31",
         "source_name": "Central Bank of Egypt",
@@ -1197,7 +1197,7 @@
         "status": "fresh"
       },
       "overnight_lending": {
-        "value": 26.0,
+        "value": 28.25,
         "unit": "%",
         "as_of": "2025-03-31",
         "source_name": "Central Bank of Egypt",
@@ -1213,7 +1213,7 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 49.11,
+          "value": 50.658,
           "unit": "EGP per USD",
           "as_of": "2025-02-28",
           "source_name": "Exchange API (open data)",
@@ -1225,7 +1225,7 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 54.62,
+          "value": 52.6468,
           "unit": "EGP per EUR",
           "as_of": "2025-02-28",
           "source_name": "Exchange API (open data)",
@@ -1237,7 +1237,7 @@
     },
     "inflation": {
       "headline": {
-        "value": 22.5,
+        "value": 12.8,
         "unit": "% YoY",
         "as_of": "2025-03-10",
         "source_name": "CAPMAS",
@@ -1245,7 +1245,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 20.9,
+        "value": 10.0,
         "unit": "% YoY",
         "as_of": "2025-03-10",
         "source_name": "Central Bank of Egypt",
@@ -1287,7 +1287,7 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 49.09,
+          "value": 50.2297,
           "unit": "EGP per USD",
           "as_of": "2025-01-31",
           "source_name": "Exchange API (open data)",
@@ -1299,7 +1299,7 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 54.44,
+          "value": 52.1944,
           "unit": "EGP per EUR",
           "as_of": "2025-01-31",
           "source_name": "Exchange API (open data)",
@@ -1311,7 +1311,7 @@
     },
     "inflation": {
       "headline": {
-        "value": 23.1,
+        "value": 24.0,
         "unit": "% YoY",
         "as_of": "2025-02-10",
         "source_name": "CAPMAS",
@@ -1319,7 +1319,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 21.5,
+        "value": 22.6,
         "unit": "% YoY",
         "as_of": "2025-02-10",
         "source_name": "Central Bank of Egypt",
@@ -1361,7 +1361,7 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 48.82,
+          "value": 50.8433,
           "unit": "EGP per USD",
           "as_of": "2024-12-31",
           "source_name": "Exchange API (open data)",
@@ -1373,7 +1373,7 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 53.98,
+          "value": 52.9205,
           "unit": "EGP per EUR",
           "as_of": "2024-12-31",
           "source_name": "Exchange API (open data)",
@@ -1385,7 +1385,7 @@
     },
     "inflation": {
       "headline": {
-        "value": 23.7,
+        "value": 24.1,
         "unit": "% YoY",
         "as_of": "2025-01-10",
         "source_name": "CAPMAS",
@@ -1393,7 +1393,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 22.1,
+        "value": 23.2,
         "unit": "% YoY",
         "as_of": "2025-01-10",
         "source_name": "Central Bank of Egypt",
@@ -1435,7 +1435,7 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 48.55,
+          "value": 49.5728,
           "unit": "EGP per USD",
           "as_of": "2024-11-30",
           "source_name": "Exchange API (open data)",
@@ -1447,7 +1447,7 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 53.53,
+          "value": 52.4404,
           "unit": "EGP per EUR",
           "as_of": "2024-11-30",
           "source_name": "Exchange API (open data)",
@@ -1459,7 +1459,7 @@
     },
     "inflation": {
       "headline": {
-        "value": 24.4,
+        "value": 25.5,
         "unit": "% YoY",
         "as_of": "2024-12-10",
         "source_name": "CAPMAS",
@@ -1467,7 +1467,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 22.8,
+        "value": 23.7,
         "unit": "% YoY",
         "as_of": "2024-12-10",
         "source_name": "Central Bank of Egypt",
@@ -1509,7 +1509,7 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 48.53,
+          "value": 48.7445,
           "unit": "EGP per USD",
           "as_of": "2024-10-31",
           "source_name": "Exchange API (open data)",
@@ -1521,7 +1521,7 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 53.36,
+          "value": 52.8953,
           "unit": "EGP per EUR",
           "as_of": "2024-10-31",
           "source_name": "Exchange API (open data)",
@@ -1533,7 +1533,7 @@
     },
     "inflation": {
       "headline": {
-        "value": 25.0,
+        "value": 26.5,
         "unit": "% YoY",
         "as_of": "2024-11-10",
         "source_name": "CAPMAS",
@@ -1541,7 +1541,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 23.4,
+        "value": 24.4,
         "unit": "% YoY",
         "as_of": "2024-11-10",
         "source_name": "Central Bank of Egypt",
@@ -1583,7 +1583,7 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 48.26,
+          "value": 48.3218,
           "unit": "EGP per USD",
           "as_of": "2024-09-30",
           "source_name": "Exchange API (open data)",
@@ -1595,7 +1595,7 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 52.91,
+          "value": 53.9553,
           "unit": "EGP per EUR",
           "as_of": "2024-09-30",
           "source_name": "Exchange API (open data)",
@@ -1607,7 +1607,7 @@
     },
     "inflation": {
       "headline": {
-        "value": 25.6,
+        "value": 26.4,
         "unit": "% YoY",
         "as_of": "2024-10-10",
         "source_name": "CAPMAS",
@@ -1615,7 +1615,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 24.0,
+        "value": 25.0,
         "unit": "% YoY",
         "as_of": "2024-10-10",
         "source_name": "Central Bank of Egypt",
@@ -1657,7 +1657,7 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 48.24,
+          "value": 48.5622,
           "unit": "EGP per USD",
           "as_of": "2024-08-31",
           "source_name": "Exchange API (open data)",
@@ -1669,7 +1669,7 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 52.73,
+          "value": 53.7172,
           "unit": "EGP per EUR",
           "as_of": "2024-08-31",
           "source_name": "Exchange API (open data)",
@@ -1689,7 +1689,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 24.6,
+        "value": 25.1,
         "unit": "% YoY",
         "as_of": "2024-09-10",
         "source_name": "Central Bank of Egypt",
@@ -1731,7 +1731,7 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 47.97,
+          "value": 48.4419,
           "unit": "EGP per USD",
           "as_of": "2024-07-31",
           "source_name": "Exchange API (open data)",
@@ -1743,7 +1743,7 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 52.29,
+          "value": 52.4188,
           "unit": "EGP per EUR",
           "as_of": "2024-07-31",
           "source_name": "Exchange API (open data)",
@@ -1755,7 +1755,7 @@
     },
     "inflation": {
       "headline": {
-        "value": 26.9,
+        "value": 25.7,
         "unit": "% YoY",
         "as_of": "2024-08-10",
         "source_name": "CAPMAS",
@@ -1763,7 +1763,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 25.3,
+        "value": 24.4,
         "unit": "% YoY",
         "as_of": "2024-08-10",
         "source_name": "Central Bank of Egypt",
@@ -1805,7 +1805,7 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 47.7,
+          "value": 48.0303,
           "unit": "EGP per USD",
           "as_of": "2024-06-30",
           "source_name": "Exchange API (open data)",
@@ -1817,7 +1817,7 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 51.85,
+          "value": 51.4647,
           "unit": "EGP per EUR",
           "as_of": "2024-06-30",
           "source_name": "Exchange API (open data)",
@@ -1837,7 +1837,7 @@
         "status": "fresh"
       },
       "core": {
-        "value": 25.9,
+        "value": 26.6,
         "unit": "% YoY",
         "as_of": "2024-07-10",
         "source_name": "Central Bank of Egypt",
