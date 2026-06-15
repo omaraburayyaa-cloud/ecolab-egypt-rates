@@ -13,7 +13,7 @@
           "source_url": "https://github.com/fawazahmed0/exchange-api",
           "status": "fresh",
           "kind": "market",
-          "previous_value": 52.2774
+          "previous_value": 52.22
         }
       },
       "EUR_EGP": {
@@ -95,11 +95,11 @@
           "kind": "official"
         },
         "market": {
-          "value": 52.2774,
+          "value": 52.22,
           "unit": "EGP per USD",
           "as_of": "2026-05-31",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }
@@ -177,11 +177,11 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 53.0159,
+          "value": 53.62,
           "unit": "EGP per USD",
           "as_of": "2026-04-30",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }
@@ -251,11 +251,11 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 54.4478,
+          "value": 54.53,
           "unit": "EGP per USD",
           "as_of": "2026-03-31",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }
@@ -325,11 +325,11 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 47.493,
+          "value": 47.95,
           "unit": "EGP per USD",
           "as_of": "2026-02-28",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }
@@ -399,11 +399,11 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 47.1217,
+          "value": 46.93,
           "unit": "EGP per USD",
           "as_of": "2026-01-31",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }
@@ -473,11 +473,11 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 47.7182,
+          "value": 47.7,
           "unit": "EGP per USD",
           "as_of": "2025-12-31",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }
@@ -547,11 +547,11 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 47.6452,
+          "value": 47.58,
           "unit": "EGP per USD",
           "as_of": "2025-11-30",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }
@@ -621,11 +621,11 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 47.2343,
+          "value": 47.24,
           "unit": "EGP per USD",
           "as_of": "2025-10-31",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }
@@ -695,11 +695,11 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 48.0489,
+          "value": 47.85,
           "unit": "EGP per USD",
           "as_of": "2025-09-30",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }
@@ -769,11 +769,11 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 48.5521,
+          "value": 48.58,
           "unit": "EGP per USD",
           "as_of": "2025-08-31",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }
@@ -843,11 +843,11 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 48.7246,
+          "value": 48.57,
           "unit": "EGP per USD",
           "as_of": "2025-07-31",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }
@@ -917,11 +917,11 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 49.7198,
+          "value": 49.6,
           "unit": "EGP per USD",
           "as_of": "2025-06-30",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }
@@ -991,11 +991,11 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 49.5363,
+          "value": 49.72,
           "unit": "EGP per USD",
           "as_of": "2025-05-31",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }
@@ -1065,11 +1065,11 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 50.8054,
+          "value": 50.83,
           "unit": "EGP per USD",
           "as_of": "2025-04-30",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }
@@ -1139,11 +1139,11 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 50.5214,
+          "value": 50.57,
           "unit": "EGP per USD",
           "as_of": "2025-03-31",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }
@@ -1213,11 +1213,11 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 50.658,
+          "value": 50.65,
           "unit": "EGP per USD",
           "as_of": "2025-02-28",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }
@@ -1287,11 +1287,11 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 50.2297,
+          "value": 50.23,
           "unit": "EGP per USD",
           "as_of": "2025-01-31",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }
@@ -1361,11 +1361,11 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 50.8433,
+          "value": 50.84,
           "unit": "EGP per USD",
           "as_of": "2024-12-31",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }
@@ -1435,11 +1435,11 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 49.5728,
+          "value": 49.59,
           "unit": "EGP per USD",
           "as_of": "2024-11-30",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }
@@ -1509,11 +1509,11 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 48.7445,
+          "value": 48.95,
           "unit": "EGP per USD",
           "as_of": "2024-10-31",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }
@@ -1583,11 +1583,11 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 48.3218,
+          "value": 48.28,
           "unit": "EGP per USD",
           "as_of": "2024-09-30",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }
@@ -1657,11 +1657,11 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 48.5622,
+          "value": 48.62,
           "unit": "EGP per USD",
           "as_of": "2024-08-31",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }
@@ -1731,11 +1731,11 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 48.4419,
+          "value": 48.56,
           "unit": "EGP per USD",
           "as_of": "2024-07-31",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }
@@ -1805,11 +1805,11 @@
       "USD_EGP": {
         "official": null,
         "market": {
-          "value": 48.0303,
+          "value": 48.03,
           "unit": "EGP per USD",
           "as_of": "2024-06-30",
-          "source_name": "Exchange API (open data)",
-          "source_url": "https://github.com/fawazahmed0/exchange-api",
+          "source_name": "USD/EGP daily series (provided)",
+          "source_url": "",
           "status": "fresh",
           "kind": "market"
         }

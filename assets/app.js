@@ -77,7 +77,7 @@
     }
     if (node.market && node.market.value != null) {
       return { headline: node.market,
-               headlineLabel: "Reference rate (official not collected)",
+               headlineLabel: "Spot rate",
                reference: null };
     }
     return { headline: null, headlineLabel: "", reference: null };

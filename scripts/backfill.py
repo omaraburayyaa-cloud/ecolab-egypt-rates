@@ -34,6 +34,22 @@ def last_business_dates(yy, mm):
     return [date(yy, mm, last - k).isoformat() for k in range(0, 5)]
 
 
+SRC_PROVIDED = {"source_name": "USD/EGP daily series (provided)", "source_url": ""}
+
+
+def market_from_csv(row, csv_key, unit, as_of):
+    """Use an authoritative month-end value supplied in the CSV, if present."""
+    if not row:
+        return None
+    v = (row.get(csv_key) or "").strip()
+    if v == "":
+        return None
+    try:
+        return S.metric(round(float(v), 4), unit, as_of, SRC_PROVIDED, "fresh", kind="market")
+    except ValueError:
+        return None
+
+
 def fetch_month_end_fx(yy, mm, pair, base):
     unit = "EGP per USD" if pair == "USD_EGP" else "EGP per EUR"
     for day in last_business_dates(yy, mm):
@@ -95,10 +111,12 @@ def main():
         rel = date(yy + (mm == 12), (mm % 12) + 1, 10).isoformat()
         prev = existing.get(key, {})
         row = seed.get(key)
-        print(f"  {key}: fetching market FX ...")
+        print(f"  {key}: building FX ...")
 
-        usd_m = fetch_month_end_fx(yy, mm, "USD_EGP", "usd")
-        eur_m = fetch_month_end_fx(yy, mm, "EUR_EGP", "eur")
+        usd_m = market_from_csv(row, "usd_market", "EGP per USD", as_of_me) \
+            or fetch_month_end_fx(yy, mm, "USD_EGP", "usd")
+        eur_m = market_from_csv(row, "eur_market", "EGP per EUR", as_of_me) \
+            or fetch_month_end_fx(yy, mm, "EUR_EGP", "eur")
 
         def official(pair, csv_key, unit):
             v = num(row, csv_key)
