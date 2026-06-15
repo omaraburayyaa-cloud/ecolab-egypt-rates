@@ -119,11 +119,14 @@ def main():
             or fetch_month_end_fx(yy, mm, "EUR_EGP", "eur")
 
         def official(pair, csv_key, unit):
+            # Official FX only exists if explicitly provided in the CSV.
+            # Never carry a stray value forward; otherwise it would shadow the
+            # authoritative market/provided rate in the display.
             v = num(row, csv_key)
             if v is not None:
                 return S.metric(round(v, 4), unit, as_of_me, S.SRC_CBE,
                                 "fresh", kind="official")
-            return (prev.get("fx", {}).get(pair, {}) or {}).get("official")
+            return None
 
         def monthly(group, key2, csv_key, unit, src):
             v = num(row, csv_key)

@@ -85,15 +85,7 @@
     "label": "May 2026",
     "fx": {
       "USD_EGP": {
-        "official": {
-          "value": 51.35,
-          "unit": "EGP per USD",
-          "as_of": "2026-05-31",
-          "source_name": "Central Bank of Egypt",
-          "source_url": "https://www.cbe.org.eg",
-          "status": "fresh",
-          "kind": "official"
-        },
+        "official": null,
         "market": {
           "value": 52.22,
           "unit": "EGP per USD",
@@ -105,15 +97,7 @@
         }
       },
       "EUR_EGP": {
-        "official": {
-          "value": 59.71,
-          "unit": "EGP per EUR",
-          "as_of": "2026-05-31",
-          "source_name": "Central Bank of Egypt",
-          "source_url": "https://www.cbe.org.eg",
-          "status": "fresh",
-          "kind": "official"
-        },
+        "official": null,
         "market": {
           "value": 60.9538,
           "unit": "EGP per EUR",
