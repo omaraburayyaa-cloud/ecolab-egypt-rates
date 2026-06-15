@@ -12,7 +12,8 @@
 
     <header class="header">
       <div class="brand">
-        <img src="assets/logo-placeholder.svg" alt="Ecolab logo placeholder" />
+        <img src="assets/logo.svg" alt="Ecolab logo"
+             onerror="if(this.src.indexOf('logo.svg')>-1){this.src='assets/logo.png';}else{this.onerror=null;this.src='assets/logo-placeholder.svg';}" />
         <div>
           <h1>Ecolab Egypt Finance Market Dashboard</h1>
           <p class="disclaimer" id="disclaimer">Internal reference only. Verify against source before publishing.</p>
