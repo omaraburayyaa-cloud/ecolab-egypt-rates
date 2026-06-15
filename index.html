@@ -16,7 +16,6 @@
              onerror="if(this.src.indexOf('logo.svg')>-1){this.src='assets/logo.png';}else{this.onerror=null;this.style.display='none';}" />
         <div>
           <h1>Ecolab Egypt Finance Market Dashboard</h1>
-          <p class="disclaimer" id="disclaimer">Internal reference only. Verify against source before publishing.</p>
         </div>
       </div>
       <div class="stamps">
@@ -30,10 +29,6 @@
     <div class="toolbar">
       <label for="month-select">Reporting month</label>
       <select id="month-select" autocomplete="off" aria-label="Select reporting month"></select>
-      <span class="spacer"></span>
-      <button class="btn primary" id="btn-copy">&#128203; Copy reporting summary</button>
-      <button class="btn" id="btn-csv">&#11015; CSV</button>
-      <button class="btn" id="btn-json">&#11015; JSON</button>
     </div>
 
     <section>
@@ -64,8 +59,6 @@
       <span class="k stale">Stale</span>
       <span class="k unavailable">Unavailable / needs manual verification</span>
     </div>
-
-    <div class="footer" id="footer"></div>
 
   </main>
   <script src="assets/app.js"></script>

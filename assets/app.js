@@ -253,97 +253,6 @@
     $("hist-table").innerHTML = histTable(snap);
   }
 
-  /* ---------- copy / export --------------------------------------------- */
-  function summaryText() {
-    var snap = state.history.filter(function (s) { return s.month === state.month; })[0];
-    if (!snap) return "";
-    var usd = fxParts(snap.fx.USD_EGP), eur = fxParts(snap.fx.EUR_EGP);
-    function line(label, m, dp, suffix) {
-      if (!m || m.value == null) return label + ": Not available";
-      return label + ": " + Number(m.value).toFixed(dp) + (suffix || "") +
-        "  (" + (m.source_name || "") +
-        (m.kind ? ", " + kindLabel(m.kind) : "") + ", as of " + fmtDateAscii(m.as_of) + ")";
-    }
-    function invLine(label, m) {
-      if (!m || m.value == null) return label + ": Not available";
-      return label + ": " + (1 / m.value).toFixed(4);
-    }
-    var lines = [
-      "Ecolab Egypt Finance Market Dashboard - Reporting summary (" + snap.label + ")",
-      "",
-      line("USD/EGP", usd && usd.headline, 2),
-      line("EUR/EGP", eur && eur.headline, 2),
-      invLine("EGP/USD", usd && usd.headline),
-      invLine("EGP/EUR", eur && eur.headline),
-      line("Headline inflation", snap.inflation.headline, 1, "% YoY"),
-      line("Core inflation", snap.inflation.core, 1, "% YoY"),
-      line("Policy rate", snap.rates.policy, 2, "%"),
-      line("Overnight deposit rate", snap.rates.overnight_deposit, 2, "%"),
-      line("Overnight lending rate", snap.rates.overnight_lending, 2, "%"),
-      "",
-      "Internal reference. Verify against source before publishing."
-    ];
-    return lines.join("\n");
-  }
-
-  function fmtDateAscii(iso) {
-    if (!iso) return "n/a";
-    var p = String(iso).slice(0, 10).split("-");
-    if (p.length < 3) return iso;
-    return Number(p[2]) + " " + MONTHS[Number(p[1]) - 1].slice(0, 3) + " " + p[0];
-  }
-
-  function copySummary() {
-    var text = summaryText(), btn = $("btn-copy");
-    function done() { var o = btn.innerHTML; btn.innerHTML = "&#10003; Copied";
-      setTimeout(function () { btn.innerHTML = o; }, 1600); }
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(text).then(done, function () { fallbackCopy(text, done); });
-    } else { fallbackCopy(text, done); }
-  }
-
-  function fallbackCopy(text, done) {
-    var ta = document.createElement("textarea");
-    ta.value = text; document.body.appendChild(ta); ta.select();
-    try { document.execCommand("copy"); done(); } catch (e) { window.prompt("Copy:", text); }
-    document.body.removeChild(ta);
-  }
-
-  function download(name, content, type) {
-    var blob = new Blob([content], { type: type });
-    var url = URL.createObjectURL(blob), a = document.createElement("a");
-    a.href = url; a.download = name; document.body.appendChild(a); a.click();
-    document.body.removeChild(a); URL.revokeObjectURL(url);
-  }
-
-  function exportCsv() {
-    var head = ["month", "metric", "value", "unit", "as_of", "source", "status"];
-    var rows = [head.join(",")];
-    function push(month, metric, m) {
-      if (!m) return;
-      rows.push([month, metric, m.value, '"' + (m.unit || "") + '"', m.as_of,
-        '"' + (m.source_name || "") + '"', m.status].join(","));
-    }
-    state.history.forEach(function (s) {
-      push(s.month, "USD_EGP_official", s.fx.USD_EGP.official);
-      push(s.month, "USD_EGP_market", s.fx.USD_EGP.market);
-      push(s.month, "EUR_EGP_official", s.fx.EUR_EGP.official);
-      push(s.month, "EUR_EGP_market", s.fx.EUR_EGP.market);
-      push(s.month, "inflation_headline", s.inflation.headline);
-      push(s.month, "inflation_core", s.inflation.core);
-      push(s.month, "rate_policy", s.rates.policy);
-      push(s.month, "rate_overnight_deposit", s.rates.overnight_deposit);
-      push(s.month, "rate_overnight_lending", s.rates.overnight_lending);
-    });
-    download("ecolab-egypt-finance-history.csv", rows.join("\n"), "text/csv");
-  }
-
-  function exportJson() {
-    download("ecolab-egypt-finance-history.json",
-      JSON.stringify({ latest: state.latest, history: state.history }, null, 2),
-      "application/json");
-  }
-
   /* ---------- boot ------------------------------------------------------- */
   function showError(msg) {
     $("error-slot").innerHTML = '<div class="error">' + msg + "</div>";
@@ -353,7 +262,6 @@
     var L = state.latest, H = state.history;
     $("last-updated").innerHTML = fmtDate(L.meta.last_updated);
     $("last-checked").innerHTML = fmtStamp(L.meta.last_checked);
-    if (L.meta.disclaimer) $("disclaimer").textContent = L.meta.disclaimer;
 
     var sel = $("month-select");
     sel.innerHTML = H.map(function (s) {
@@ -363,17 +271,8 @@
     sel.value = state.month;
     sel.addEventListener("change", function () { state.month = sel.value; renderMonth(); });
 
-    $("btn-copy").addEventListener("click", copySummary);
-    $("btn-csv").addEventListener("click", exportCsv);
-    $("btn-json").addEventListener("click", exportJson);
-
     renderCurrent();
     renderMonth();
-
-    $("footer").innerHTML = "Generated by <code>" +
-      (L.meta.generated_by || "collector") + "</code>. " +
-      "Figures are shown with their original source and date. This dashboard is an " +
-      "internal aid and is not an official Ecolab or government publication.";
   }
 
   Promise.all([
