@@ -1,17 +1,14 @@
 {
-  "_comment": "MANUAL OVERRIDES. Anything you put here WINS over auto-collected values. Use it (1) to enter the official CBE FX rate, inflation, and interest rates each month, and (2) to correct a wrong auto value. Leave a key out to let the collector fill it. Dates are ISO (YYYY-MM-DD). 'status' is optional; if omitted the collector computes freshness.",
-  "_schema_example": {
-    "fx": {
-      "USD_EGP": {
-        "official": {"value": 50.95, "as_of": "2026-05-31", "source_name": "Central Bank of Egypt", "source_url": "https://www.cbe.org.eg"}
-      }
-    },
+  "_comment": "MANUAL OVERRIDES. Anything you put here WINS over auto-collected values and becomes the headline number. Use it to enter the official CBE FX rate, inflation, and interest rates. Verify every figure against the official source before relying on it for reporting. Dates are ISO (YYYY-MM-DD). To add the official FX rate later, add an 'fx' block (see the README example).",
+  "overrides": {
     "inflation": {
-      "headline": {"value": 13.1, "as_of": "2026-05-10", "source_name": "CAPMAS", "source_url": "https://www.capmas.gov.eg"}
+      "headline": {"value": 14.6, "as_of": "2026-06-10", "source_name": "CAPMAS", "source_url": "https://www.capmas.gov.eg"},
+      "core": {"value": 13.8, "as_of": "2026-06-10", "source_name": "Central Bank of Egypt", "source_url": "https://www.cbe.org.eg"}
     },
     "rates": {
-      "policy": {"value": 24.00, "as_of": "2026-04-17", "source_name": "Central Bank of Egypt", "source_url": "https://www.cbe.org.eg"}
+      "policy": {"value": 19.50, "as_of": "2026-05-21", "source_name": "Central Bank of Egypt", "source_url": "https://www.cbe.org.eg"},
+      "overnight_deposit": {"value": 19.00, "as_of": "2026-05-21", "source_name": "Central Bank of Egypt", "source_url": "https://www.cbe.org.eg"},
+      "overnight_lending": {"value": 20.00, "as_of": "2026-05-21", "source_name": "Central Bank of Egypt", "source_url": "https://www.cbe.org.eg"}
     }
-  },
-  "overrides": {}
+  }
 }
