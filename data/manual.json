@@ -1,6 +1,11 @@
 {
   "_comment": "MANUAL OVERRIDES. Anything you put here WINS over auto-collected values and becomes the headline number. Use it to enter the official CBE FX rate, inflation, and interest rates. Verify every figure against the official source before relying on it for reporting. Dates are ISO (YYYY-MM-DD). To add the official FX rate later, add an 'fx' block (see the README example).",
   "overrides": {
+    "fx": {
+      "USD_EGP": {
+        "market": {"value": 50.36, "as_of": "2026-06-15", "source_name": "USD/EGP daily series (provided)", "source_url": ""}
+      }
+    },
     "inflation": {
       "headline": {"value": 14.6, "as_of": "2026-06-10", "source_name": "CAPMAS", "source_url": "https://www.capmas.gov.eg"},
       "core": {"value": 13.8, "as_of": "2026-06-10", "source_name": "Central Bank of Egypt", "source_url": "https://www.cbe.org.eg"}

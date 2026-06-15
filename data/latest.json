@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": 1,
     "last_updated": "2026-06-15",
-    "last_checked": "2026-06-15T11:08:34+00:00",
+    "last_checked": "2026-06-15T11:24:43+00:00",
     "generated_by": "collect.py",
     "disclaimer": "Internal reference only. Verify against source before publishing."
   },
@@ -10,11 +10,11 @@
     "USD_EGP": {
       "official": null,
       "market": {
-        "value": 51.8871,
+        "value": 50.36,
         "unit": "EGP per USD",
-        "as_of": "2026-06-14",
-        "source_name": "Exchange API (open data)",
-        "source_url": "https://github.com/fawazahmed0/exchange-api",
+        "as_of": "2026-06-15",
+        "source_name": "USD/EGP daily series (provided)",
+        "source_url": "",
         "status": "fresh",
         "kind": "market",
         "previous_value": 52.22

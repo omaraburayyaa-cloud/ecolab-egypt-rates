@@ -78,15 +78,22 @@ def build_fx(manual, prev_snap, today):
     out = {}
     for pair, base in (("USD_EGP", "usd"), ("EUR_EGP", "eur")):
         unit = "EGP per USD" if pair == "USD_EGP" else "EGP per EUR"
-        # market (auto) -----------------------------------------------------
-        rate, as_of = S.fetch_fx(base, "egp", "latest")
-        if rate is not None and S.in_bounds(pair, rate):
-            market = S.metric(round(rate, 4), unit, as_of, S.SRC_MARKET,
-                              S.freshness("fx", as_of, today), kind="market",
-                              previous_value=prev_value(prev_snap, "fx", pair, "market"))
+        # market: a manual override (e.g. an authoritative provided series)
+        # WINS over the auto feed; otherwise fetch the live rate ------------
+        market = override_metric(
+            get_override(manual, "fx", pair, "market"), unit, S.SRC_MARKET,
+            kind="market", today=today)
+        if market:
+            market["previous_value"] = prev_value(prev_snap, "fx", pair, "market")
         else:
-            market = S.metric(None, unit, None, S.SRC_MARKET, "unavailable",
-                              kind="market")
+            rate, as_of = S.fetch_fx(base, "egp", "latest")
+            if rate is not None and S.in_bounds(pair, rate):
+                market = S.metric(round(rate, 4), unit, as_of, S.SRC_MARKET,
+                                  S.freshness("fx", as_of, today), kind="market",
+                                  previous_value=prev_value(prev_snap, "fx", pair, "market"))
+            else:
+                market = S.metric(None, unit, None, S.SRC_MARKET, "unavailable",
+                                  kind="market")
         # official (manual) -------------------------------------------------
         official = override_metric(
             get_override(manual, "fx", pair, "official"), unit, S.SRC_CBE,
