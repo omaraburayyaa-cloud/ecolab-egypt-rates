@@ -73,10 +73,8 @@
     return MONTHS[d.getMonth()] + " " + d.getFullYear();
   }
 
-  function srcLink(m) {
-    if (!m || !m.source_url) return "";
-    return '<a href="' + m.source_url + '" target="_blank" rel="noopener">source &#8599;</a>';
-  }
+  // Clickable source links are intentionally disabled (data is hand-fed).
+  function srcLink(m) { return ""; }
 
   /* ---------- FX: pick headline (official) vs reference (market) --------- */
   function fxParts(node) {
@@ -243,24 +241,13 @@
         ? fmtNum(pm.value, def.dp) + def.suffix
         : '<span class="src">n/a</span>';
       var chg = changeCell(m && m.value, pm && pm.value, def.dp, def.suffix, def.isFx);
-      var src;
-      if (!m) {
-        src = '<span class="src">not available</span>';
-      } else {
-        var dateText = isInflation(m)
-          ? infRefLabel(m.as_of) + " figure, released " + fmtDate(m.as_of)
-          : fmtDate(m.as_of);
-        src = '<span class="src">' + (m.source_name || "") + " &middot; " +
-          dateText + " " + srcLink(m) + "</span>";
-      }
       return "<tr><td>" + def.label + '</td><td class="num">' + selCell +
-        '</td><td class="num">' + prevCell + "</td><td>" + chg +
-        '</td><td>' + src + "</td></tr>";
+        '</td><td class="num">' + prevCell + "</td><td>" + chg + "</td></tr>";
     });
 
     return '<div style="overflow-x:auto"><table class="detail"><thead><tr>' +
       "<th>Metric</th><th>" + snap.label + "</th><th>" + prevLabel +
-      "</th><th>YoY change</th><th>Source &amp; date</th></tr></thead><tbody>" +
+      "</th><th>YoY change</th></tr></thead><tbody>" +
       rows.join("") + "</tbody></table></div>";
   }
 
