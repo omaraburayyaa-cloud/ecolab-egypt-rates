@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "schema_version": 1,
+    "last_updated": "2026-06-14",
+    "last_checked": "2026-06-15T06:00:00Z",
+    "generated_by": "seed_sample.py (SAMPLE DATA - not real figures)",
+    "disclaimer": "Internal reference only. Verify against the cited source before publishing."
+  },
+  "fx": {
+    "USD_EGP": {
+      "official": {
+        "value": 51.35,
+        "unit": "EGP per USD",
+        "as_of": "2026-05-31",
+        "source_name": "Central Bank of Egypt",
+        "source_url": "https://www.cbe.org.eg",
+        "status": "fresh",
+        "kind": "official"
+      },
+      "market": {
+        "value": 51.89,
+        "unit": "EGP per USD",
+        "as_of": "2026-06-14",
+        "source_name": "Exchange API (open data)",
+        "source_url": "https://github.com/fawazahmed0/exchange-api",
+        "status": "fresh",
+        "kind": "market",
+        "previous_value": 51.65
+      }
+    },
+    "EUR_EGP": {
+      "official": {
+        "value": 59.71,
+        "unit": "EGP per EUR",
+        "as_of": "2026-05-31",
+        "source_name": "Central Bank of Egypt",
+        "source_url": "https://www.cbe.org.eg",
+        "status": "fresh",
+        "kind": "official"
+      },
+      "market": {
+        "value": 60.34,
+        "unit": "EGP per EUR",
+        "as_of": "2026-06-14",
+        "source_name": "Exchange API (open data)",
+        "source_url": "https://github.com/fawazahmed0/exchange-api",
+        "status": "fresh",
+        "kind": "market",
+        "previous_value": 60.06
+      }
+    }
+  },
+  "inflation": {
+    "headline": {
+      "value": 13.1,
+      "unit": "% YoY",
+      "as_of": "2026-06-10",
+      "source_name": "CAPMAS",
+      "source_url": "https://www.capmas.gov.eg",
+      "status": "check",
+      "previous_value": 13.7
+    },
+    "core": {
+      "value": 11.5,
+      "unit": "% YoY",
+      "as_of": "2026-06-10",
+      "source_name": "Central Bank of Egypt",
+      "source_url": "https://www.cbe.org.eg",
+      "status": "check",
+      "previous_value": 12.1
+    }
+  },
+  "rates": {
+    "policy": {
+      "value": 24.0,
+      "unit": "%",
+      "as_of": "2026-05-31",
+      "source_name": "Central Bank of Egypt",
+      "source_url": "https://www.cbe.org.eg",
+      "status": "fresh",
+      "previous_value": 24.0
+    },
+    "overnight_deposit": {
+      "value": 23.5,
+      "unit": "%",
+      "as_of": "2026-05-31",
+      "source_name": "Central Bank of Egypt",
+      "source_url": "https://www.cbe.org.eg",
+      "status": "fresh",
+      "previous_value": 23.5
+    },
+    "overnight_lending": {
+      "value": 24.5,
+      "unit": "%",
+      "as_of": "2026-05-31",
+      "source_name": "Central Bank of Egypt",
+      "source_url": "https://www.cbe.org.eg",
+      "status": "fresh",
+      "previous_value": 24.5
+    }
+  }
+}

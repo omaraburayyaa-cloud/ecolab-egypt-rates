@@ -1,0 +1,171 @@
+month,metric,value,unit,as_of,source,status
+2026-05,USD_EGP_official,51.35,EGP per USD,5/31/2026,Central Bank of Egypt,fresh
+2026-05,USD_EGP_market,51.65,EGP per USD,5/31/2026,Exchange API (open data),fresh
+2026-05,EUR_EGP_official,59.71,EGP per EUR,5/31/2026,Central Bank of Egypt,fresh
+2026-05,EUR_EGP_market,60.06,EGP per EUR,5/31/2026,Exchange API (open data),fresh
+2026-05,inflation_headline,13.1,% YoY,6/10/2026,CAPMAS,fresh
+2026-05,inflation_core,11.5,% YoY,6/10/2026,Central Bank of Egypt,fresh
+2026-05,rate_policy,24,%,5/31/2026,Central Bank of Egypt,fresh
+2026-05,rate_overnight_deposit,23.5,%,5/31/2026,Central Bank of Egypt,fresh
+2026-05,rate_overnight_lending,24.5,%,5/31/2026,Central Bank of Egypt,fresh
+2026-04,USD_EGP_market,51.63,EGP per USD,4/30/2026,Exchange API (open data),fresh
+2026-04,EUR_EGP_market,59.85,EGP per EUR,4/30/2026,Exchange API (open data),fresh
+2026-04,inflation_headline,13.7,% YoY,5/10/2026,CAPMAS,fresh
+2026-04,inflation_core,12.1,% YoY,5/10/2026,Central Bank of Egypt,fresh
+2026-04,rate_policy,24,%,4/30/2026,Central Bank of Egypt,fresh
+2026-04,rate_overnight_deposit,23.5,%,4/30/2026,Central Bank of Egypt,fresh
+2026-04,rate_overnight_lending,24.5,%,4/30/2026,Central Bank of Egypt,fresh
+2026-03,USD_EGP_market,51.36,EGP per USD,3/31/2026,Exchange API (open data),fresh
+2026-03,EUR_EGP_market,59.36,EGP per EUR,3/31/2026,Exchange API (open data),fresh
+2026-03,inflation_headline,14.4,% YoY,4/10/2026,CAPMAS,fresh
+2026-03,inflation_core,12.8,% YoY,4/10/2026,Central Bank of Egypt,fresh
+2026-03,rate_policy,24,%,3/31/2026,Central Bank of Egypt,fresh
+2026-03,rate_overnight_deposit,23.5,%,3/31/2026,Central Bank of Egypt,fresh
+2026-03,rate_overnight_lending,24.5,%,3/31/2026,Central Bank of Egypt,fresh
+2026-02,USD_EGP_market,51.09,EGP per USD,2/28/2026,Exchange API (open data),fresh
+2026-02,EUR_EGP_market,58.87,EGP per EUR,2/28/2026,Exchange API (open data),fresh
+2026-02,inflation_headline,15,% YoY,3/10/2026,CAPMAS,fresh
+2026-02,inflation_core,13.4,% YoY,3/10/2026,Central Bank of Egypt,fresh
+2026-02,rate_policy,24,%,2/28/2026,Central Bank of Egypt,fresh
+2026-02,rate_overnight_deposit,23.5,%,2/28/2026,Central Bank of Egypt,fresh
+2026-02,rate_overnight_lending,24.5,%,2/28/2026,Central Bank of Egypt,fresh
+2026-01,USD_EGP_market,51.07,EGP per USD,1/31/2026,Exchange API (open data),fresh
+2026-01,EUR_EGP_market,58.67,EGP per EUR,1/31/2026,Exchange API (open data),fresh
+2026-01,inflation_headline,15.6,% YoY,2/10/2026,CAPMAS,fresh
+2026-01,inflation_core,14,% YoY,2/10/2026,Central Bank of Egypt,fresh
+2026-01,rate_policy,24,%,1/31/2026,Central Bank of Egypt,fresh
+2026-01,rate_overnight_deposit,23.5,%,1/31/2026,Central Bank of Egypt,fresh
+2026-01,rate_overnight_lending,24.5,%,1/31/2026,Central Bank of Egypt,fresh
+2025-12,USD_EGP_market,50.8,EGP per USD,12/31/2025,Exchange API (open data),fresh
+2025-12,EUR_EGP_market,58.19,EGP per EUR,12/31/2025,Exchange API (open data),fresh
+2025-12,inflation_headline,16.2,% YoY,1/10/2026,CAPMAS,fresh
+2025-12,inflation_core,14.6,% YoY,1/10/2026,Central Bank of Egypt,fresh
+2025-12,rate_policy,24,%,12/31/2025,Central Bank of Egypt,fresh
+2025-12,rate_overnight_deposit,23.5,%,12/31/2025,Central Bank of Egypt,fresh
+2025-12,rate_overnight_lending,24.5,%,12/31/2025,Central Bank of Egypt,fresh
+2025-11,USD_EGP_market,50.78,EGP per USD,11/30/2025,Exchange API (open data),fresh
+2025-11,EUR_EGP_market,57.99,EGP per EUR,11/30/2025,Exchange API (open data),fresh
+2025-11,inflation_headline,16.9,% YoY,12/10/2025,CAPMAS,fresh
+2025-11,inflation_core,15.3,% YoY,12/10/2025,Central Bank of Egypt,fresh
+2025-11,rate_policy,24,%,11/30/2025,Central Bank of Egypt,fresh
+2025-11,rate_overnight_deposit,23.5,%,11/30/2025,Central Bank of Egypt,fresh
+2025-11,rate_overnight_lending,24.5,%,11/30/2025,Central Bank of Egypt,fresh
+2025-10,USD_EGP_market,50.51,EGP per USD,10/31/2025,Exchange API (open data),fresh
+2025-10,EUR_EGP_market,57.51,EGP per EUR,10/31/2025,Exchange API (open data),fresh
+2025-10,inflation_headline,17.5,% YoY,11/10/2025,CAPMAS,fresh
+2025-10,inflation_core,15.9,% YoY,11/10/2025,Central Bank of Egypt,fresh
+2025-10,rate_policy,24,%,10/31/2025,Central Bank of Egypt,fresh
+2025-10,rate_overnight_deposit,23.5,%,10/31/2025,Central Bank of Egypt,fresh
+2025-10,rate_overnight_lending,24.5,%,10/31/2025,Central Bank of Egypt,fresh
+2025-09,USD_EGP_market,50.24,EGP per USD,9/30/2025,Exchange API (open data),fresh
+2025-09,EUR_EGP_market,57.03,EGP per EUR,9/30/2025,Exchange API (open data),fresh
+2025-09,inflation_headline,18.1,% YoY,10/10/2025,CAPMAS,fresh
+2025-09,inflation_core,16.5,% YoY,10/10/2025,Central Bank of Egypt,fresh
+2025-09,rate_policy,24,%,9/30/2025,Central Bank of Egypt,fresh
+2025-09,rate_overnight_deposit,23.5,%,9/30/2025,Central Bank of Egypt,fresh
+2025-09,rate_overnight_lending,24.5,%,9/30/2025,Central Bank of Egypt,fresh
+2025-08,USD_EGP_market,50.22,EGP per USD,8/31/2025,Exchange API (open data),fresh
+2025-08,EUR_EGP_market,56.84,EGP per EUR,8/31/2025,Exchange API (open data),fresh
+2025-08,inflation_headline,18.7,% YoY,9/10/2025,CAPMAS,fresh
+2025-08,inflation_core,17.1,% YoY,9/10/2025,Central Bank of Egypt,fresh
+2025-08,rate_policy,24.5,%,8/31/2025,Central Bank of Egypt,fresh
+2025-08,rate_overnight_deposit,24,%,8/31/2025,Central Bank of Egypt,fresh
+2025-08,rate_overnight_lending,25,%,8/31/2025,Central Bank of Egypt,fresh
+2025-07,USD_EGP_market,49.95,EGP per USD,7/31/2025,Exchange API (open data),fresh
+2025-07,EUR_EGP_market,56.37,EGP per EUR,7/31/2025,Exchange API (open data),fresh
+2025-07,inflation_headline,19.4,% YoY,8/10/2025,CAPMAS,fresh
+2025-07,inflation_core,17.8,% YoY,8/10/2025,Central Bank of Egypt,fresh
+2025-07,rate_policy,24.5,%,7/31/2025,Central Bank of Egypt,fresh
+2025-07,rate_overnight_deposit,24,%,7/31/2025,Central Bank of Egypt,fresh
+2025-07,rate_overnight_lending,25,%,7/31/2025,Central Bank of Egypt,fresh
+2025-06,USD_EGP_market,49.93,EGP per USD,6/30/2025,Exchange API (open data),fresh
+2025-06,EUR_EGP_market,56.18,EGP per EUR,6/30/2025,Exchange API (open data),fresh
+2025-06,inflation_headline,20,% YoY,7/10/2025,CAPMAS,fresh
+2025-06,inflation_core,18.4,% YoY,7/10/2025,Central Bank of Egypt,fresh
+2025-06,rate_policy,24.5,%,6/30/2025,Central Bank of Egypt,fresh
+2025-06,rate_overnight_deposit,24,%,6/30/2025,Central Bank of Egypt,fresh
+2025-06,rate_overnight_lending,25,%,6/30/2025,Central Bank of Egypt,fresh
+2025-05,USD_EGP_market,49.67,EGP per USD,5/31/2025,Exchange API (open data),fresh
+2025-05,EUR_EGP_market,55.73,EGP per EUR,5/31/2025,Exchange API (open data),fresh
+2025-05,inflation_headline,20.6,% YoY,6/10/2025,CAPMAS,fresh
+2025-05,inflation_core,19,% YoY,6/10/2025,Central Bank of Egypt,fresh
+2025-05,rate_policy,25.5,%,5/31/2025,Central Bank of Egypt,fresh
+2025-05,rate_overnight_deposit,25,%,5/31/2025,Central Bank of Egypt,fresh
+2025-05,rate_overnight_lending,26,%,5/31/2025,Central Bank of Egypt,fresh
+2025-04,USD_EGP_market,49.4,EGP per USD,4/30/2025,Exchange API (open data),fresh
+2025-04,EUR_EGP_market,55.26,EGP per EUR,4/30/2025,Exchange API (open data),fresh
+2025-04,inflation_headline,21.2,% YoY,5/10/2025,CAPMAS,fresh
+2025-04,inflation_core,19.6,% YoY,5/10/2025,Central Bank of Egypt,fresh
+2025-04,rate_policy,25.5,%,4/30/2025,Central Bank of Egypt,fresh
+2025-04,rate_overnight_deposit,25,%,4/30/2025,Central Bank of Egypt,fresh
+2025-04,rate_overnight_lending,26,%,4/30/2025,Central Bank of Egypt,fresh
+2025-03,USD_EGP_market,49.38,EGP per USD,3/31/2025,Exchange API (open data),fresh
+2025-03,EUR_EGP_market,55.08,EGP per EUR,3/31/2025,Exchange API (open data),fresh
+2025-03,inflation_headline,21.9,% YoY,4/10/2025,CAPMAS,fresh
+2025-03,inflation_core,20.3,% YoY,4/10/2025,Central Bank of Egypt,fresh
+2025-03,rate_policy,25.5,%,3/31/2025,Central Bank of Egypt,fresh
+2025-03,rate_overnight_deposit,25,%,3/31/2025,Central Bank of Egypt,fresh
+2025-03,rate_overnight_lending,26,%,3/31/2025,Central Bank of Egypt,fresh
+2025-02,USD_EGP_market,49.11,EGP per USD,2/28/2025,Exchange API (open data),fresh
+2025-02,EUR_EGP_market,54.62,EGP per EUR,2/28/2025,Exchange API (open data),fresh
+2025-02,inflation_headline,22.5,% YoY,3/10/2025,CAPMAS,fresh
+2025-02,inflation_core,20.9,% YoY,3/10/2025,Central Bank of Egypt,fresh
+2025-02,rate_policy,27.75,%,2/28/2025,Central Bank of Egypt,fresh
+2025-02,rate_overnight_deposit,27.25,%,2/28/2025,Central Bank of Egypt,fresh
+2025-02,rate_overnight_lending,28.25,%,2/28/2025,Central Bank of Egypt,fresh
+2025-01,USD_EGP_market,49.09,EGP per USD,1/31/2025,Exchange API (open data),fresh
+2025-01,EUR_EGP_market,54.44,EGP per EUR,1/31/2025,Exchange API (open data),fresh
+2025-01,inflation_headline,23.1,% YoY,2/10/2025,CAPMAS,fresh
+2025-01,inflation_core,21.5,% YoY,2/10/2025,Central Bank of Egypt,fresh
+2025-01,rate_policy,27.75,%,1/31/2025,Central Bank of Egypt,fresh
+2025-01,rate_overnight_deposit,27.25,%,1/31/2025,Central Bank of Egypt,fresh
+2025-01,rate_overnight_lending,28.25,%,1/31/2025,Central Bank of Egypt,fresh
+2024-12,USD_EGP_market,48.82,EGP per USD,12/31/2024,Exchange API (open data),fresh
+2024-12,EUR_EGP_market,53.98,EGP per EUR,12/31/2024,Exchange API (open data),fresh
+2024-12,inflation_headline,23.7,% YoY,1/10/2025,CAPMAS,fresh
+2024-12,inflation_core,22.1,% YoY,1/10/2025,Central Bank of Egypt,fresh
+2024-12,rate_policy,27.75,%,12/31/2024,Central Bank of Egypt,fresh
+2024-12,rate_overnight_deposit,27.25,%,12/31/2024,Central Bank of Egypt,fresh
+2024-12,rate_overnight_lending,28.25,%,12/31/2024,Central Bank of Egypt,fresh
+2024-11,USD_EGP_market,48.55,EGP per USD,11/30/2024,Exchange API (open data),fresh
+2024-11,EUR_EGP_market,53.53,EGP per EUR,11/30/2024,Exchange API (open data),fresh
+2024-11,inflation_headline,24.4,% YoY,12/10/2024,CAPMAS,fresh
+2024-11,inflation_core,22.8,% YoY,12/10/2024,Central Bank of Egypt,fresh
+2024-11,rate_policy,27.75,%,11/30/2024,Central Bank of Egypt,fresh
+2024-11,rate_overnight_deposit,27.25,%,11/30/2024,Central Bank of Egypt,fresh
+2024-11,rate_overnight_lending,28.25,%,11/30/2024,Central Bank of Egypt,fresh
+2024-10,USD_EGP_market,48.53,EGP per USD,10/31/2024,Exchange API (open data),fresh
+2024-10,EUR_EGP_market,53.36,EGP per EUR,10/31/2024,Exchange API (open data),fresh
+2024-10,inflation_headline,25,% YoY,11/10/2024,CAPMAS,fresh
+2024-10,inflation_core,23.4,% YoY,11/10/2024,Central Bank of Egypt,fresh
+2024-10,rate_policy,27.75,%,10/31/2024,Central Bank of Egypt,fresh
+2024-10,rate_overnight_deposit,27.25,%,10/31/2024,Central Bank of Egypt,fresh
+2024-10,rate_overnight_lending,28.25,%,10/31/2024,Central Bank of Egypt,fresh
+2024-09,USD_EGP_market,48.26,EGP per USD,9/30/2024,Exchange API (open data),fresh
+2024-09,EUR_EGP_market,52.91,EGP per EUR,9/30/2024,Exchange API (open data),fresh
+2024-09,inflation_headline,25.6,% YoY,10/10/2024,CAPMAS,fresh
+2024-09,inflation_core,24,% YoY,10/10/2024,Central Bank of Egypt,fresh
+2024-09,rate_policy,27.75,%,9/30/2024,Central Bank of Egypt,fresh
+2024-09,rate_overnight_deposit,27.25,%,9/30/2024,Central Bank of Egypt,fresh
+2024-09,rate_overnight_lending,28.25,%,9/30/2024,Central Bank of Egypt,fresh
+2024-08,USD_EGP_market,48.24,EGP per USD,8/31/2024,Exchange API (open data),fresh
+2024-08,EUR_EGP_market,52.73,EGP per EUR,8/31/2024,Exchange API (open data),fresh
+2024-08,inflation_headline,26.2,% YoY,9/10/2024,CAPMAS,fresh
+2024-08,inflation_core,24.6,% YoY,9/10/2024,Central Bank of Egypt,fresh
+2024-08,rate_policy,27.75,%,8/31/2024,Central Bank of Egypt,fresh
+2024-08,rate_overnight_deposit,27.25,%,8/31/2024,Central Bank of Egypt,fresh
+2024-08,rate_overnight_lending,28.25,%,8/31/2024,Central Bank of Egypt,fresh
+2024-07,USD_EGP_market,47.97,EGP per USD,7/31/2024,Exchange API (open data),fresh
+2024-07,EUR_EGP_market,52.29,EGP per EUR,7/31/2024,Exchange API (open data),fresh
+2024-07,inflation_headline,26.9,% YoY,8/10/2024,CAPMAS,fresh
+2024-07,inflation_core,25.3,% YoY,8/10/2024,Central Bank of Egypt,fresh
+2024-07,rate_policy,27.75,%,7/31/2024,Central Bank of Egypt,fresh
+2024-07,rate_overnight_deposit,27.25,%,7/31/2024,Central Bank of Egypt,fresh
+2024-07,rate_overnight_lending,28.25,%,7/31/2024,Central Bank of Egypt,fresh
+2024-06,USD_EGP_market,47.7,EGP per USD,6/30/2024,Exchange API (open data),fresh
+2024-06,EUR_EGP_market,51.85,EGP per EUR,6/30/2024,Exchange API (open data),fresh
+2024-06,inflation_headline,27.5,% YoY,7/10/2024,CAPMAS,fresh
+2024-06,inflation_core,25.9,% YoY,7/10/2024,Central Bank of Egypt,fresh
+2024-06,rate_policy,27.75,%,6/30/2024,Central Bank of Egypt,fresh
+2024-06,rate_overnight_deposit,27.25,%,6/30/2024,Central Bank of Egypt,fresh
+2024-06,rate_overnight_lending,28.25,%,6/30/2024,Central Bank of Egypt,fresh

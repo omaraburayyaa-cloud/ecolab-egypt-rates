@@ -1,0 +1,3 @@
+# No third-party packages required.
+# The collector uses only the Python standard library (urllib, json, csv).
+# This file exists so the GitHub Action step is explicit; it installs nothing.

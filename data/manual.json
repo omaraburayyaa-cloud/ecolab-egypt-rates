@@ -1,0 +1,17 @@
+{
+  "_comment": "MANUAL OVERRIDES. Anything you put here WINS over auto-collected values. Use it (1) to enter the official CBE FX rate, inflation, and interest rates each month, and (2) to correct a wrong auto value. Leave a key out to let the collector fill it. Dates are ISO (YYYY-MM-DD). 'status' is optional; if omitted the collector computes freshness.",
+  "_schema_example": {
+    "fx": {
+      "USD_EGP": {
+        "official": {"value": 50.95, "as_of": "2026-05-31", "source_name": "Central Bank of Egypt", "source_url": "https://www.cbe.org.eg"}
+      }
+    },
+    "inflation": {
+      "headline": {"value": 13.1, "as_of": "2026-05-10", "source_name": "CAPMAS", "source_url": "https://www.capmas.gov.eg"}
+    },
+    "rates": {
+      "policy": {"value": 24.00, "as_of": "2026-04-17", "source_name": "Central Bank of Egypt", "source_url": "https://www.cbe.org.eg"}
+    }
+  },
+  "overrides": {}
+}

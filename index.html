@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ecolab Egypt Finance Market Dashboard</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <main class="wrap">
+
+    <header class="header">
+      <div class="brand">
+        <img src="assets/logo-placeholder.svg" alt="Ecolab logo placeholder" />
+        <div>
+          <h1>Ecolab Egypt Finance Market Dashboard</h1>
+          <p class="disclaimer" id="disclaimer">Internal reference only. Verify against source before publishing.</p>
+        </div>
+      </div>
+      <div class="stamps">
+        <div><span class="ico">&#9851;</span> Last updated <b id="last-updated">&mdash;</b></div>
+        <div><span class="ico">&#9201;</span> Last checked <b id="last-checked">&mdash;</b></div>
+      </div>
+    </header>
+
+    <div id="error-slot"></div>
+
+    <div class="toolbar">
+      <label for="month-select">Reporting month</label>
+      <select id="month-select" autocomplete="off" aria-label="Select reporting month"></select>
+      <span class="spacer"></span>
+      <button class="btn primary" id="btn-copy">&#128203; Copy reporting summary</button>
+      <button class="btn" id="btn-csv">&#11015; CSV</button>
+      <button class="btn" id="btn-json">&#11015; JSON</button>
+    </div>
+
+    <section>
+      <h2 class="section-title"><span class="dot"></span> Exchange rates (current)</h2>
+      <div class="grid fx" id="fx-grid"></div>
+    </section>
+
+    <section>
+      <h2 class="section-title"><span class="dot"></span> Inflation (latest release)</h2>
+      <div class="grid fx" id="inflation-grid"></div>
+    </section>
+
+    <section>
+      <h2 class="section-title"><span class="dot"></span> Interest rates (CBE)</h2>
+      <div class="grid rate" id="rates-grid"></div>
+    </section>
+
+    <section class="report" id="report"></section>
+
+    <section class="hist">
+      <h2 id="hist-title">Historical lookup</h2>
+      <div id="hist-table"></div>
+    </section>
+
+    <div class="legend">
+      <span class="k fresh">Fresh</span>
+      <span class="k check">Check (released figure lags)</span>
+      <span class="k stale">Stale</span>
+      <span class="k unavailable">Unavailable / needs manual verification</span>
+    </div>
+
+    <div class="footer" id="footer"></div>
+
+  </main>
+  <script src="assets/app.js"></script>
+</body>
+</html>
