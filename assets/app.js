@@ -189,35 +189,79 @@
     );
   }
 
-  /* ---------- historical detail table ----------------------------------- */
+  /* ---------- historical detail table (with same-month-last-year) -------- */
+  function prevYearKey(month) {
+    var p = String(month).split("-");
+    return (Number(p[0]) - 1) + "-" + p[1];
+  }
+  function monthKeyLabel(key) {
+    var p = String(key).split("-");
+    return MONTHS[Number(p[1]) - 1] + " " + p[0];
+  }
+  function changeCell(selV, prevV, dp, suffix, isFx) {
+    if (selV == null || prevV == null) return '<span class="trend flat">n/a</span>';
+    var d = +(selV - prevV).toFixed(dp + 1);
+    if (Math.abs(d) < Math.pow(10, -(dp + 1))) d = 0;
+    var cls = d > 0 ? "up" : (d < 0 ? "down" : "flat");
+    var arrow = d > 0 ? "&#9650;" : (d < 0 ? "&#9660;" : "&#8211;");
+    var sign = d > 0 ? "+" : (d < 0 ? "&minus;" : "");
+    var pct = (isFx && prevV) ? " (" + (d >= 0 ? "+" : "&minus;") +
+      fmtNum(Math.abs(100 * d / prevV), 1) + "%)" : "";
+    return '<span class="trend ' + cls + '">' + arrow + " " + sign +
+      fmtNum(Math.abs(d), dp) + (suffix || "") + pct + "</span>";
+  }
+
+  var HIST_METRICS = [
+    { label: "USD / EGP", dp: 2, suffix: "", fx: "USD_EGP", isFx: true },
+    { label: "EUR / EGP", dp: 2, suffix: "", fx: "EUR_EGP", isFx: true },
+    { label: "Headline inflation", dp: 1, suffix: "%", path: ["inflation", "headline"] },
+    { label: "Core inflation", dp: 1, suffix: "%", path: ["inflation", "core"] },
+    { label: "Policy rate", dp: 2, suffix: "%", path: ["rates", "policy"] },
+    { label: "Overnight deposit rate", dp: 2, suffix: "%", path: ["rates", "overnight_deposit"] },
+    { label: "Overnight lending rate", dp: 2, suffix: "%", path: ["rates", "overnight_lending"] }
+  ];
+  function metricFrom(snap, def) {
+    if (!snap) return null;
+    if (def.fx) { var p = fxParts(snap.fx[def.fx]); return p ? p.headline : null; }
+    var n = snap;
+    for (var i = 0; i < def.path.length; i++) { n = n && n[def.path[i]]; }
+    return n || null;
+  }
+
   function histTable(snap) {
     if (!snap) return "";
-    var rows = [];
-    function row(label, m, dp, suffix) {
-      if (!m || m.value == null) {
-        rows.push("<tr><td>" + label + '</td><td class="num">&mdash;</td><td>' +
-          pill("unavailable") + '</td><td class="src">not available</td></tr>');
-        return;
+    var prevKey = prevYearKey(snap.month);
+    var prev = state.history.filter(function (s) { return s.month === prevKey; })[0] || null;
+    var prevLabel = monthKeyLabel(prevKey);
+
+    var rows = HIST_METRICS.map(function (def) {
+      var m = metricFrom(snap, def), pm = metricFrom(prev, def);
+      var selCell = (m && m.value != null)
+        ? fmtNum(m.value, def.dp) + def.suffix + " " + pill(m.status)
+        : "&mdash;";
+      var prevCell = (pm && pm.value != null)
+        ? fmtNum(pm.value, def.dp) + def.suffix
+        : '<span class="src">n/a</span>';
+      var chg = changeCell(m && m.value, pm && pm.value, def.dp, def.suffix, def.isFx);
+      var src;
+      if (!m) {
+        src = '<span class="src">not available</span>';
+      } else {
+        var dateText = isInflation(m)
+          ? infRefLabel(m.as_of) + " figure, released " + fmtDate(m.as_of)
+          : fmtDate(m.as_of);
+        src = '<span class="src">' + (m.source_name || "") + " &middot; " +
+          dateText + " " + srcLink(m) + "</span>";
       }
-      var dateText = isInflation(m)
-        ? infRefLabel(m.as_of) + " figure, released " + fmtDate(m.as_of)
-        : fmtDate(m.as_of);
-      rows.push("<tr><td>" + label + '</td><td class="num">' +
-        fmtNum(m.value, dp) + (suffix || "") + "</td><td>" + pill(m.status) +
-        '</td><td class="src">' + (m.source_name || "") + " &middot; " +
-        dateText + " " + srcLink(m) + "</td></tr>");
-    }
-    var usd = fxParts(snap.fx.USD_EGP), eur = fxParts(snap.fx.EUR_EGP);
-    row("USD / EGP (" + (usd ? usd.headlineLabel : "") + ")", usd && usd.headline, 2);
-    row("EUR / EGP (" + (eur ? eur.headlineLabel : "") + ")", eur && eur.headline, 2);
-    row("Headline inflation", snap.inflation.headline, 1, "%");
-    row("Core inflation", snap.inflation.core, 1, "%");
-    row("Policy rate", snap.rates.policy, 2, "%");
-    row("Overnight deposit rate", snap.rates.overnight_deposit, 2, "%");
-    row("Overnight lending rate", snap.rates.overnight_lending, 2, "%");
-    return '<table class="detail"><thead><tr><th>Metric</th><th>Value</th>' +
-      "<th>Status</th><th>Source &amp; date</th></tr></thead><tbody>" +
-      rows.join("") + "</tbody></table>";
+      return "<tr><td>" + def.label + '</td><td class="num">' + selCell +
+        '</td><td class="num">' + prevCell + "</td><td>" + chg +
+        '</td><td>' + src + "</td></tr>";
+    });
+
+    return '<div style="overflow-x:auto"><table class="detail"><thead><tr>' +
+      "<th>Metric</th><th>" + snap.label + "</th><th>" + prevLabel +
+      "</th><th>YoY change</th><th>Source &amp; date</th></tr></thead><tbody>" +
+      rows.join("") + "</tbody></table></div>";
   }
 
   /* ---------- top "current" sections ------------------------------------ */
