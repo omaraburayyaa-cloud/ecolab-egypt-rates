@@ -63,6 +63,16 @@
     return kind === "market" ? "auto reference" : kind;
   }
 
+  // inflation: figures are released ~10th of the FOLLOWING month, so the
+  // reference month is the month before the release (as_of) date.
+  function isInflation(m) { return !!(m && m.unit && m.unit.indexOf("YoY") > -1); }
+  function infRefLabel(iso) {
+    var p = String(iso).slice(0, 10).split("-");
+    if (p.length < 3) return "";
+    var d = new Date(Number(p[0]), Number(p[1]) - 2, 1);
+    return MONTHS[d.getMonth()] + " " + d.getFullYear();
+  }
+
   function srcLink(m) {
     if (!m || !m.source_url) return "";
     return '<a href="' + m.source_url + '" target="_blank" rel="noopener">source &#8599;</a>';
@@ -125,10 +135,10 @@
     var unitSuffix = m.unit && m.unit.indexOf("%") >= 0 ? "%" : "";
     var val = '<div class="value">' + fmtNum(m.value, dp) + unitSuffix +
       trend(m.value, m.previous_value, dp) + "</div>";
-    var sub = m.as_of ? '<div class="secondary">Released ' + fmtDate(m.as_of) +
-      "</div>" : "";
+    var sub = m.as_of ? '<div class="secondary">' + infRefLabel(m.as_of) +
+      " figure</div>" : "";
     return card(label, val + sub, pill(m.status),
-                m.source_name || "", fmtDate(m.as_of), srcLink(m));
+                m.source_name || "", fmtDate(m.as_of), srcLink(m), "released");
   }
 
   function statCard(label, m) {
@@ -142,11 +152,12 @@
       " &middot; " + fmtDate(m.as_of) + "</div></div>";
   }
 
-  function card(name, body, pillHtml, badge, asof, src) {
+  function card(name, body, pillHtml, badge, asof, src, asofLabel) {
     return '<div class="card"><div class="top"><span class="name">' + name +
       "</span>" + pillHtml + "</div>" + body +
       '<div class="foot"><span class="badge">' + badge +
-      '</span><span class="asof">' + (asof ? "as of " + asof + " " : "") +
+      '</span><span class="asof">' +
+      (asof ? (asofLabel || "as of") + " " + asof + " " : "") +
       src + "</span></div></div>";
   }
 
@@ -156,7 +167,10 @@
     var usd = fxParts(snap.fx.USD_EGP), eur = fxParts(snap.fx.EUR_EGP);
     function item(l, m, dp, suffix) {
       var v = (m && m.value != null) ? fmtNum(m.value, dp) + (suffix || "") : "&mdash;";
-      var meta = m ? fmtDate(m.as_of) + (m.kind ? " &middot; " + kindLabel(m.kind) : "") : "not available";
+      var meta;
+      if (!m) meta = "not available";
+      else if (isInflation(m)) meta = "released " + fmtDate(m.as_of);
+      else meta = fmtDate(m.as_of) + (m.kind ? " &middot; " + kindLabel(m.kind) : "");
       return '<div class="ritem"><div class="l">' + l + '</div><div class="v">' +
         v + '</div><div class="m">' + meta + "</div></div>";
     }
@@ -185,10 +199,13 @@
           pill("unavailable") + '</td><td class="src">not available</td></tr>');
         return;
       }
+      var dateText = isInflation(m)
+        ? infRefLabel(m.as_of) + " figure, released " + fmtDate(m.as_of)
+        : fmtDate(m.as_of);
       rows.push("<tr><td>" + label + '</td><td class="num">' +
         fmtNum(m.value, dp) + (suffix || "") + "</td><td>" + pill(m.status) +
         '</td><td class="src">' + (m.source_name || "") + " &middot; " +
-        fmtDate(m.as_of) + " " + srcLink(m) + "</td></tr>");
+        dateText + " " + srcLink(m) + "</td></tr>");
     }
     var usd = fxParts(snap.fx.USD_EGP), eur = fxParts(snap.fx.EUR_EGP);
     row("USD / EGP (" + (usd ? usd.headlineLabel : "") + ")", usd && usd.headline, 2);
