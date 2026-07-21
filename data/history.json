@@ -19,9 +19,9 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 57.8124,
+          "value": 57.9007,
           "unit": "EGP per EUR",
-          "as_of": "2026-07-19",
+          "as_of": "2026-07-20",
           "source_name": "Exchange API (open data)",
           "source_url": "https://github.com/fawazahmed0/exchange-api",
           "status": "fresh",
@@ -37,7 +37,7 @@
         "as_of": "2026-06-10",
         "source_name": "CAPMAS",
         "source_url": "https://www.capmas.gov.eg",
-        "status": "fresh",
+        "status": "check",
         "previous_value": 14.6
       },
       "core": {
@@ -46,7 +46,7 @@
         "as_of": "2026-06-10",
         "source_name": "Central Bank of Egypt",
         "source_url": "https://www.cbe.org.eg",
-        "status": "fresh",
+        "status": "check",
         "previous_value": 13.8
       }
     },
