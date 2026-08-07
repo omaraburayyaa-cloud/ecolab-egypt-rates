@@ -19,9 +19,9 @@
       "EUR_EGP": {
         "official": null,
         "market": {
-          "value": 57.9319,
+          "value": 57.5581,
           "unit": "EGP per EUR",
-          "as_of": "2026-08-05",
+          "as_of": "2026-08-06",
           "source_name": "Exchange API (open data)",
           "source_url": "https://github.com/fawazahmed0/exchange-api",
           "status": "fresh",
