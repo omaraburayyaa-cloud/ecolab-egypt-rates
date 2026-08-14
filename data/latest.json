@@ -1,8 +1,8 @@
 {
   "meta": {
     "schema_version": 1,
-    "last_updated": "2026-08-12",
-    "last_checked": "2026-08-13T06:08:08+00:00",
+    "last_updated": "2026-08-13",
+    "last_checked": "2026-08-14T06:05:50+00:00",
     "generated_by": "collect.py",
     "disclaimer": "Internal reference only. Verify against source before publishing."
   },
@@ -23,9 +23,9 @@
     "EUR_EGP": {
       "official": null,
       "market": {
-        "value": 57.8904,
+        "value": 57.8652,
         "unit": "EGP per EUR",
-        "as_of": "2026-08-12",
+        "as_of": "2026-08-13",
         "source_name": "Exchange API (open data)",
         "source_url": "https://github.com/fawazahmed0/exchange-api",
         "status": "fresh",
